@@ -1,0 +1,5 @@
+zone "wi.lan" IN {
+    type stub;
+    masters { 10.10.2.2; };   // authoritative server for this stub zone
+    file "/var/cache/bind/stub.wi.lan";  // optional, BIND can create it
+};

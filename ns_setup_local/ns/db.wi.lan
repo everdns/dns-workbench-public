@@ -1,0 +1,15 @@
+$TTL 3600
+@   IN  SOA ns1.wi.lan. admin.wi.lan. (
+            2025093001 ; serial (YYYYMMDDnn)
+            3600       ; refresh
+            1800       ; retry
+            604800     ; expire
+            3600 )     ; minimum
+
+    IN  NS  ns1.wi.lan.
+
+ns1             IN  A   10.10.2.2
+resolver        IN  A   10.10.1.1
+resolver        IN  A   10.10.2.1
+host1           IN  A   10.10.1.2
+www             IN  A   10.10.2.3
