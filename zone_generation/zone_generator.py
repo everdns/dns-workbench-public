@@ -17,7 +17,7 @@ SLD = "wi.lan"
 #Should be a subnet using CIDR notation
 SUBNET = "10.10.16.0/20"
 
-def get_random_hostnames(count: int, length: int = 8) -> set(str):
+def get_random_hostnames(count: int, length: int = 8) -> set:
     # Use a set to ensure uniqueness
     hostnames = set()
     while len(hostnames) < count:
