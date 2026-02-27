@@ -3,7 +3,7 @@ options {
     recursion yes;
     listen-on { 10.10.1.1; 127.0.0.1; };
     allow-query { any; };
-    validate-except { wi.lan; };
+    validate-except { wi.lan; dns64perf.test; };
     dnssec-validation auto;
     auth-nxdomain yes;
 };
